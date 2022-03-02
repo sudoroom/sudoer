@@ -54,17 +54,17 @@ export default class MenuBuilder {
 
   buildDarwinTemplate(): MenuItemConstructorOptions[] {
     const subMenuAbout: DarwinMenuItemConstructorOptions = {
-      label: 'Electron',
+      label: 'Sudoer',
       submenu: [
         {
-          label: 'About ElectronReact',
+          label: 'About Electron',
           selector: 'orderFrontStandardAboutPanel:',
         },
         { type: 'separator' },
         { label: 'Services', submenu: [] },
         { type: 'separator' },
         {
-          label: 'Hide ElectronReact',
+          label: 'Hide Sudoer',
           accelerator: 'Command+H',
           selector: 'hide:',
         },
@@ -155,29 +155,27 @@ export default class MenuBuilder {
       label: 'Help',
       submenu: [
         {
-          label: 'Learn More',
+          label: 'Learn More About Sudo Room',
           click() {
-            shell.openExternal('https://electronjs.org');
+            shell.openExternal('https://sudoroom.org');
+          },
+        },
+        {
+          label: 'Donate To Sudo Room',
+          click() {
+            shell.openExternal('https://sudoroom.org/donate');
           },
         },
         {
           label: 'Documentation',
           click() {
-            shell.openExternal(
-              'https://github.com/electron/electron/tree/main/docs#readme'
-            );
-          },
-        },
-        {
-          label: 'Community Discussions',
-          click() {
-            shell.openExternal('https://www.electronjs.org/community');
+            shell.openExternal('https://github.com/sudoroom/sudoer#readme');
           },
         },
         {
           label: 'Search Issues',
           click() {
-            shell.openExternal('https://github.com/electron/electron/issues');
+            shell.openExternal('https://github.com/sudoroom/sudoer/issues');
           },
         },
       ],
@@ -256,29 +254,27 @@ export default class MenuBuilder {
         label: 'Help',
         submenu: [
           {
-            label: 'Learn More',
+            label: 'Learn More About Sudo Room',
             click() {
-              shell.openExternal('https://electronjs.org');
+              shell.openExternal('https://sudoroom.org');
+            },
+          },
+          {
+            label: 'Donate To Sudo Room',
+            click() {
+              shell.openExternal('https://sudoroom.org/donate');
             },
           },
           {
             label: 'Documentation',
             click() {
-              shell.openExternal(
-                'https://github.com/electron/electron/tree/main/docs#readme'
-              );
-            },
-          },
-          {
-            label: 'Community Discussions',
-            click() {
-              shell.openExternal('https://www.electronjs.org/community');
+              shell.openExternal('https://github.com/sudoroom/sudoer#readme');
             },
           },
           {
             label: 'Search Issues',
             click() {
-              shell.openExternal('https://github.com/electron/electron/issues');
+              shell.openExternal('https://github.com/sudoroom/sudoer/issues');
             },
           },
         ],
